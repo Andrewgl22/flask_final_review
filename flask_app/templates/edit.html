@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/book/{{book.id}}/edit" method="post">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" value="{{book.title}}">
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" value="{{book.author}}">
+        <label for="num_pages">Number of Pages:</label>
+        <input type="number" name="num_pages" id="num_pages" value="{{book.num_pages}}">
+        <input type="submit" value="Edit Book">
+    </form>
+    
+</body>
+</html>
